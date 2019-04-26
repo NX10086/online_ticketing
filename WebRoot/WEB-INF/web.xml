@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ticket_purchase</display-name>
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <servlet><!--servlet类路径配置-->
+    <servlet-name>QueryTicketServlet</servlet-name>
+    <servlet-class>servlet.QueryTicketServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>QueryTicketUnLoginServlet</servlet-name>
+    <servlet-class>servlet.QueryTicketUnLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryTicketImplServlet</servlet-name>
+    <servlet-class>servlet.QueryTicketImplServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <servlet-class>servlet.UserLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <servlet-class>servlet.UserRegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePersonInfoServlet</servlet-name>
+    <servlet-class>servlet.UpdatePersonInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PurchaseServlet</servlet-name>
+    <servlet-class>servlet.PurchaseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddPassengerServlet</servlet-name>
+    <servlet-class>servlet.AddPassengerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>discount_update</servlet-name>
+    <servlet-class>servlet.discount_update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>discount_update</servlet-name>
+    <url-pattern>/servlet/discount_update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manager_search</servlet-name>
+    <servlet-class>servlet.manager_search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>manager_search</servlet-name>
+    <url-pattern>/servlet/manager_search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manager_add</servlet-name>
+    <servlet-class>servlet.manager_add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>manager_add</servlet-name>
+    <url-pattern>/servlet/manager_add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manager_update</servlet-name>
+    <servlet-class>servlet.manager_update</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>manager_update</servlet-name>
+    <url-pattern>/servlet/manager_update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>manager_delete</servlet-name>
+    <servlet-class>servlet.manager_delete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>manager_delete</servlet-name>
+    <url-pattern>/servlet/manager_delete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>statistics_do</servlet-name>
+    <servlet-class>servlet.statistics_do</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>statistics_do</servlet-name>
+    <url-pattern>/servlet/statistics_do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>myorder_search</servlet-name>
+    <servlet-class>servlet.myorder_search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myorder_search</servlet-name>
+    <url-pattern>/servlet/myorder_search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>finance_do</servlet-name>
+    <servlet-class>servlet.finance_do</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>finance_do</servlet-name>
+    <url-pattern>/servlet/finance_do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>myorder_delete</servlet-name>
+    <servlet-class>servlet.myorder_delete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManagerLoginServlet</servlet-name>
+    <servlet-class>servlet.ManagerLoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>myorder_delete</servlet-name>
+    <url-pattern>/servlet/myorder_delete</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping><!--servlet类映射配置-->
+    <servlet-name>QueryTicketServlet</servlet-name>
+    <url-pattern>/QueryTicketServlet</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>QueryTicketUnLoginServlet</servlet-name>
+    <url-pattern>/QueryTicketUnLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryTicketImplServlet</servlet-name>
+    <url-pattern>/QueryTicketImplServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserLoginServlet</servlet-name>
+    <url-pattern>/UserLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserRegisterServlet</servlet-name>
+    <url-pattern>/UserRegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePersonInfoServlet</servlet-name>
+    <url-pattern>/UpdatePersonInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PurchaseServlet</servlet-name>
+    <url-pattern>/PurchaseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddPassengerServlet</servlet-name>
+    <url-pattern>/AddPassengerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManagerLoginServlet</servlet-name>
+    <url-pattern>/ManagerLoginServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

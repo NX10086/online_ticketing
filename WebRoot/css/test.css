@@ -1,0 +1,11 @@
+
+nav {
+  display: block;
+}
+  .navbar {
+    display: none;
+  }
+.nav-pills > .active > a > .badge {
+  color: #337ab7;
+  background-color: #fff;
+}
